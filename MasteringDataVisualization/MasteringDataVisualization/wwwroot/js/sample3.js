@@ -5,8 +5,18 @@
 
 d3.json("data/buildings.json").then(function(data) {
 
+    data.forEach(d => {
+        d.height = +d.height;
+    });
+
     var x = d3.scaleBand()
-        .domain(["Burj Khalifa", "Shanghai Tower", "Abraj Al-Bait Clock Tower", "Ping An Finance Centre", "Lotte World Tower", "One World Trade Center", "Guangzhou CTF Finance Center"])
+        .domain(["Burj Khalifa", "Shanghai Tower",
+            "Abraj Al-Bait Clock Tower",
+            "Ping An Finance Centre",
+            "Lotte World Tower",
+            "One World Trade Center",
+            "Guangzhou CTF Finance Center"
+        ])
         .range([0, 400])
         .paddingInner(0.2)
         .paddingOuter(0.2);
