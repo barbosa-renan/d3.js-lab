@@ -1,4 +1,6 @@
-﻿var margin = { left: 100, right: 10, top: 10, bottom: 100 };
+﻿/* D3 Margins and groups */
+
+var margin = { left: 100, right: 10, top: 10, bottom: 100 };
 var width = 600 - margin.left - margin.right;
 var height = 400 - margin.top - margin.bottom;
 
