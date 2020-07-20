@@ -1,4 +1,4 @@
-﻿/* D3 Margins and groups */
+﻿/* D3 Axis and labels */
 
 var margin = { left: 100, right: 10, top: 10, bottom: 150 };
 var width = 600 - margin.left - margin.right;
